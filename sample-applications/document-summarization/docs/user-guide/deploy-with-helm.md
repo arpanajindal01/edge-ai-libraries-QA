@@ -41,11 +41,11 @@ cd document-summarization
 
 #### Step 3: Configure the `values.yaml` File
 
-Edit the selected `values.yaml` file to set the necessary environment variables. Ensure you set the proxy settings as required.
+Edit the `values.yaml` file to set the necessary environment variables. Ensure you set the proxy settings as required.
 
 | Key | Description | Example Value |
 | --- | ----------- | ------------- |
-| `global.proxy.noProxy` | NOPROXY | `<your-no-proxy>, docker service names` |
+| `global.proxy.noProxy` | NOPROXY | `<your-no-proxy>` |
 | `global.proxy.httpProxy` | HTTP PROXY | `<your-http-proxy>` |
 | `global.proxy.httpsProxy` | HTTPS PROXY | `<your-https-proxy>` |
 | `global.huggingface.token` | Your Hugging Face API token | `<your-huggingface-token` |
