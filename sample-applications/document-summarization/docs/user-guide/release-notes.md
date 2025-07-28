@@ -16,5 +16,4 @@
 **Known Issues:**
 
 - EMF Deployment package is not supported yet
-- EMT validation is not done yet
 - Summary time depends on the size and complexity (image, tables, cross references) of the document
