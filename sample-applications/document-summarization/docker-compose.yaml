@@ -59,7 +59,7 @@ services:
     networks:
       - my_network
     volumes:
-      - /usr/local/share/ca-certificates:/usr/local/share/ca-certificates
+      - /opt/share/ca-certificates:/opt/share/ca-certificates
       - /etc/ssl/certs:/etc/ssl/certs
 
   docsum-ui:
