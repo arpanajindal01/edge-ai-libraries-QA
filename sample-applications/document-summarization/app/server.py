@@ -236,8 +236,8 @@ FastAPIInstrumentor.instrument_app(app)
 if __name__ == "__main__":
     # Get API port and host from environment or use defaults
     port = int(config.API_PORT or "8090")
-    host = config.API_HOST  # Uses 127.0.0.1 by default for security
-    
+    host = "0.0.0.0"  # Uses 0.0.0.0 to allow external access
+
     # Start FastAPI with Uvicorn
     logger.info(f"Starting Document Summarization API on {host}:{port}")
     uvicorn.run("server:app", host=host, port=port, reload=False)
