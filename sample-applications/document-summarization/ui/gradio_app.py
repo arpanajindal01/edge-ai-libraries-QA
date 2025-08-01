@@ -83,7 +83,7 @@ def create_ui():
         gr.Markdown(f"Upload a {', '.join(config.SUPPORTED_FILE_TYPES)} and get a summary using advanced AI models.")
         
         with gr.Row():
-            with gr.Column(scale=1) as input_col:
+            with gr.Column(scale=1):
                 # Input components
                 file_input = gr.File(
                     label="Upload Document",
